@@ -9,7 +9,7 @@ body {
 
 /* Header Begin */
 #header-nav {
-  background-color: #00ffff;
+  background-color: #ffffff;
   border-radius: 0;
   border: 0;
 }
@@ -19,9 +19,9 @@ body {
 }
 
 #logo-img {
-  background: url('../images/platform-logo.png') no-repeat;
-  width: 218px;
-  height: 122px;
+  background: url('../images/CollabPoint-logo-Large.png') no-repeat;
+  width: 150px;
+  height: 100px;
   margin: 10px 15px 10px 0;
 }
 
@@ -30,10 +30,10 @@ body {
 }
 .navbar-brand h1 { /* platform name */
   font-family: 'Lora', serif;
-  color: #557c3e;
+  color: #012169;
   font-size: 1.5em;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
+  /* text-shadow: 1px 1px 1px #222; */
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
@@ -42,14 +42,15 @@ body {
   text-decoration: none;
 }
 .navbar-brand p { /* tag line */
-  color: #000;
+  color: #012169;
   text-transform: capitalize;
   font-size: .7em;
   margin-top: 15px;
 }
 
-#nav-list-container {
-	
+#collapsable-nav {
+	clear: left;
+  float: left;
 }
 
 
@@ -58,12 +59,13 @@ body {
 /* End Home Page */
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 970px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/platform-logo.png') no-repeat;
-    width: 100px;
-    height: 100px;
+    background: url('../images/CollabPoint-logo-medium.png') no-repeat;
+    width: 80px;
+    height: 80px;
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+}
