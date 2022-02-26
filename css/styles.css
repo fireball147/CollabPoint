@@ -15,6 +15,7 @@ body {
   background-color: #ffffff;
   border-radius: 0;
   border: 0;
+  margin-bottom: 5px;
 }
 
 #header-div {
@@ -101,7 +102,9 @@ body {
 /* Main Frame */
 #main-frame {
   width: 100vw;
-  height: 70vh;
+  --heightA: calc(var(--vh,1vh)*100);
+  --heightB: calc(var(--heightA) - 222px);
+  height: var(--heightB);
 }
 
 /* End Main Frame */
@@ -148,6 +151,16 @@ body {
     margin-top: 15px;
   }
   /* End Header */
+
+  /* Main Frame */
+  #main-frame {
+    width: 100vw;
+    --heightA: calc(var(--vh,1vh)*100);
+    --heightB: calc(var(--heightA) - 207px);
+    height: var(--heightB);
+  }
+
+
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 969px){
@@ -177,6 +190,15 @@ body {
     margin-top: 15px;
   }
   /* End Header */
+
+  /* Main Frame */
+  #main-frame {
+    width: 100vw;
+    --heightA: calc(var(--vh,1vh)*100);
+    --heightB: calc(var(--heightA) - 171px);
+    height: var(--heightB);
+  }
+
 }
 
 /********** Extra small devices only **********/
@@ -228,4 +250,13 @@ body {
   }
 
   /* End Header */
+  
+  /* Main Frame */
+  #main-frame {
+    width: 100vw;
+    --heightA: calc(var(--vh,1vh)*100);
+    --heightB: calc(var(--heightA) - 152px);
+    height: var(--heightB);
+  }
+
 }
