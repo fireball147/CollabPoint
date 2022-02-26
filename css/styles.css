@@ -20,13 +20,6 @@ body {
   width: 100%;
 }
 
-#logo-img {
-  background: url('../images/CollabPoint-logo-Large.png') no-repeat;
-  width: 150px;
-  height: 100px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-brand {
   padding-top: 25px;
 }
@@ -98,6 +91,16 @@ body {
 /* End Header */
 
 /* End Home Page */
+
+
+@media (min-width: 1200px) {
+  #logo-img {
+    background: url('../images/CollabPoint-logo-Large.png') no-repeat;
+    width: 150px;
+    height: 100px;
+    margin: 10px 15px 10px 0;
+  }
+}
 
 /********** Medium devices only **********/
 @media (min-width: 970px) and (max-width: 1199px) {
