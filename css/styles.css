@@ -16,6 +16,8 @@ body {
 
 #header-div {
 	margin: 0px;
+  padding: 5px;
+  width: 100%;
 }
 
 #logo-img {
@@ -51,6 +53,45 @@ body {
 #collapsable-nav {
 	clear: left;
   float: left;
+  padding: 0px;
+  width: 100%;
+  height: 40px!important;
+}
+
+#collapsable-nav a {
+  box-sizing: border-box;
+  font-size: .9em;
+  color: #012169;
+  text-align: center;
+  margin: 3px;
+  padding: 5px 15px 5px 15px;
+  
+}
+
+#collapsable-nav li:nth-child(1) {
+  width: 129px;
+}
+#collapsable-nav li:nth-child(2) {
+  width: 152px;
+}
+#collapsable-nav li:nth-child(3) {
+  width: 126px;
+}
+#collapsable-nav li:nth-child(4) {
+  width: 114px;
+}
+#collapsable-nav li:nth-child(5) {
+  width: 118px;
+}
+#collapsable-nav li:nth-child(6) {
+  width: 119px;
+}
+
+#collapsable-nav a:active,#collapsable-nav a:focus, #collapsable-nav a:hover {
+  text-decoration-line: underline;
+  font-weight: 900;
+  border: 1px solid #012169;
+  border-radius: 25px;
 }
 
 
@@ -67,11 +108,43 @@ body {
     height: 80px;
     margin: 5px 5px 5px 0;
   }
+
+  #collapsable-nav {
+    margin-top: 15px;
+  }
   /* End Header */
 }
 /********** Small devices only **********/
-@media (min-width: 970px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 969px){
   /* Begin Header */
-  
+  #logo-img {
+    background: url('../images/CollabPoint-logo-small.png') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 2px 2px 2px 0;
+  }
+  .navbar-brand {
+    padding-top: 15px;
+  }
+  .navbar-brand h1 { /* platform name */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand p { /* tag line */
+    font-size: .6em;
+    margin-top: 5px;
+  }
+
+  #collapsable-nav {
+    margin-top: 15px;
+  }
   /* End Header */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
 }
