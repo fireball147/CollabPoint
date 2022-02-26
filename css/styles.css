@@ -163,6 +163,7 @@ body {
 
   .navbar-brand {
     padding-top: 10px;
+    height: 90px
   }
   .navbar-brand h1 {
     font-size: 6vw;
@@ -179,7 +180,6 @@ body {
 
   #nav-list li {
     width: 100%!important;
-
   }
 
   /* End Header */
