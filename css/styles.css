@@ -69,3 +69,9 @@ body {
   }
   /* End Header */
 }
+/********** Small devices only **********/
+@media (min-width: 970px) and (max-width: 1199px){
+  /* Begin Header */
+  
+  /* End Header */
+}
