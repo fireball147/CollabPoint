@@ -174,8 +174,15 @@ body {
     margin-top: 10px;
   }
 
+  .navbar-nav {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   #collapsable-nav {
     height: auto!important;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #nav-list ul {
@@ -184,7 +191,8 @@ body {
   }
 
   #nav-list li {
-    width: 100%!important;
+    width: 90%!important;
+    margin: auto;
   }
 
   /* End Header */
