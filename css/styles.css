@@ -150,6 +150,10 @@ body {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Begin Header */
+  .container>.navbar-header {
+    margin: 0px;
+  }
+  
   #logo-img {
     background: url('../images/CollabPoint-logo-small.png') no-repeat;
     width: 50px;
@@ -157,8 +161,25 @@ body {
     margin: 2px 2px 2px 0;
   }
 
+  .navbar-brand {
+    padding-top: 10px;
+  }
+  .navbar-brand h1 {
+    font-size: 6vw;
+  }
+
+  .navbar-brand p {
+    font-size: 3vw;
+    margin-top: 10px;
+  }
+
   #collapsable-nav {
     height: auto!important;
+  }
+
+  #nav-list li {
+    width: 100%!important;
+
   }
 
   /* End Header */
