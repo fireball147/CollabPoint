@@ -146,5 +146,10 @@ body {
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  /* Begin Header */
+  #collapsable-nav {
+    height: auto!important;
+  }
 
+  /* End Header */
 }
