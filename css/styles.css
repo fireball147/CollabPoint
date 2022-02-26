@@ -127,6 +127,11 @@ body {
 /* End Footer */
 /* End Home Page */
 
+/* Pages inside iframe */
+.inside-page {
+  background-color: #fff;
+}
+
 
 @media (min-width: 1200px) {
   #logo-img {
