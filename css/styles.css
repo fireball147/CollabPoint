@@ -6,6 +6,9 @@ body {
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
+.container {
+  width: auto;
+}
 
 /* Header Begin */
 #header-nav {
@@ -93,9 +96,32 @@ body {
   border-radius: 25px;
 }
 
-
 /* End Header */
 
+/* Main Frame */
+#main-frame {
+  width: 100vw;
+  height: 70vh;
+}
+
+/* End Main Frame */
+
+/* Begin Footer */
+
+.panel-footer .container{
+  height: 20px;
+}
+
+#helpdesk {
+  float: right;
+  font-size: 0.9em;
+}
+
+#helpdesk a {
+  color: #012169;
+}
+
+/* End Footer */
 /* End Home Page */
 
 
@@ -104,7 +130,7 @@ body {
     background: url('../images/CollabPoint-logo-Large.png') no-repeat;
     width: 150px;
     height: 100px;
-    margin: 10px 15px 10px 0;
+    margin: 10px 15px 10px 15px;
   }
 }
 
@@ -115,7 +141,7 @@ body {
     background: url('../images/CollabPoint-logo-medium.png') no-repeat;
     width: 80px;
     height: 80px;
-    margin: 5px 5px 5px 0;
+    margin: 5px 10px 5px 10px;
   }
 
   #collapsable-nav {
@@ -130,7 +156,7 @@ body {
     background: url('../images/CollabPoint-logo-small.png') no-repeat;
     width: 50px;
     height: 50px;
-    margin: 2px 2px 2px 0;
+    margin: 2px 5px 2px 5px;
   }
   .navbar-brand {
     padding-top: 15px;
@@ -164,12 +190,13 @@ body {
     background: url('../images/CollabPoint-logo-small.png') no-repeat;
     width: 50px;
     height: 50px;
-    margin: 2px 2px 2px 0;
+    margin: 2px 2px 2px 5px;
   }
 
   .navbar-brand {
     padding-top: 10px;
-    height: 90px
+    padding-left: 10px;
+    height: 90px;    
   }
   .navbar-brand h1 {
     font-size: 5.5vw;
