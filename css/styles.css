@@ -166,7 +166,7 @@ body {
     height: 90px
   }
   .navbar-brand h1 {
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
 
   .navbar-brand p {
@@ -176,6 +176,11 @@ body {
 
   #collapsable-nav {
     height: auto!important;
+  }
+
+  #nav-list ul {
+    float: right;
+    clear: left;
   }
 
   #nav-list li {
