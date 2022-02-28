@@ -104,7 +104,7 @@ body {
 /* Main Frame */
 #main-frame {
   width: 100vw;
-  height: 80%;
+  height: 720px;
 }
 
 /* End Main Frame */
@@ -163,8 +163,6 @@ textarea {
   height: 150px;
   font-weight: normal;
   margin-top: 5px;
-}
-
 }
 
 @media (min-width: 1200px) {
