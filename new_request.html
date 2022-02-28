@@ -12,11 +12,72 @@
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     
   </head>
-  <body class="inside-page">
-    <div class="container">
+  <body >
+    <div class="container content-page">
         <span>
             Raise New Request
         </span>
+        <form action="" >
+          <label class="form-label col-md-6 col-xs-12">
+            <span>Requestor Name:</span>
+            <input type="text" name="requestorName" required>
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            NBK ID:
+            <input type="text" name="nbkId" required>
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Phone:
+            <input type="text" name="phoneNo">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Location:
+            <input type="text" name="Location">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Requestor Email:
+            <input type="email" name="requestorEmail" required>
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Addtional Recipients:
+            <input type="text" name="addlRecipeints">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Heierarchy Code:
+            <input type="text" name="heierarchyCode">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Requested Due Date:
+            <input type="datetime" name="requestedDueDate" required>
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Deal Code:
+            <input type="text" name="dealCode" required>
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Client Name:
+            <input type="text" name="clientName">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            <span>Request Type:</span>
+            <input type="text" name="requestType">
+          </label>
+          <label class="form-label col-md-6 col-xs-12">
+            Team Desk:
+            <input type="text" name="teamDesk">
+          </label>
+          <label class="form-label full-row">
+            Request Instructions:
+            <textarea  name="requestInstructions"></textarea>
+          </label>
+          <label class="form-label full-row">
+            <input type="checkbox" name="dataCertification" required> &nbsp; I Certify that the request description or the data attached does not contain any non-public data, including MNPI
+          </label>
+          <label class="form-label full-row">
+            File(s):
+            <input type="file" name="attachedFiles" multiple>
+          </label>
+        </form>
     </div>
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>

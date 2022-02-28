@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 .container {
   width: auto;
@@ -18,7 +18,7 @@ body {
 }
 
 #header-div {
-	margin: 0px;
+  margin: 0px;
   padding: 5px;
   width: 100%;
 }
@@ -26,70 +26,73 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
-.navbar-brand h1 { /* platform name */
-  font-family: 'Lora', serif;
+.navbar-brand h1 {
+  /* platform name */
+  font-family: "Lora", serif;
   color: #012169;
   font-size: 1.5em;
   font-weight: bold;
   /* text-shadow: 1px 1px 1px #222; */
   margin-top: 0;
   margin-bottom: 0;
-  line-height: .75;
+  line-height: 0.75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover,
+.navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { /* tag line */
+.navbar-brand p {
+  /* tag line */
   color: #012169;
   text-transform: capitalize;
-  font-size: .7em;
+  font-size: 0.7em;
   margin-top: 15px;
 }
 
 #collapsable-nav {
-	clear: left;
+  clear: left;
   float: left;
   padding: 0px;
   width: 100%;
-  
 }
 
 #collapsable-nav a {
   box-sizing: border-box;
-  font-size: .9em;
+  font-size: 0.9em;
   color: #012169;
   text-align: center;
   margin: 3px;
   padding: 5px 15px 5px 15px;
-  
 }
 
 #collapsable-nav li:nth-child(1) {
   width: 129px;
-  height: 40px!important;
+  height: 40px !important;
 }
 #collapsable-nav li:nth-child(2) {
   width: 152px;
-  height: 40px!important;
+  height: 40px !important;
 }
 #collapsable-nav li:nth-child(3) {
   width: 126px;
-  height: 40px!important;
+  height: 40px !important;
 }
 #collapsable-nav li:nth-child(4) {
   width: 114px;
-  height: 40px!important;
+  height: 40px !important;
 }
 #collapsable-nav li:nth-child(5) {
   width: 118px;
-  height: 40px!important;
+  height: 40px !important;
 }
 #collapsable-nav li:nth-child(6) {
   width: 119px;
-  height: 40px!important;
+  height: 40px !important;
 }
 
-#collapsable-nav a:active,#collapsable-nav a:focus, #collapsable-nav a:hover {
+#collapsable-nav a:active,
+#collapsable-nav a:focus,
+#collapsable-nav a:hover {
   text-decoration-line: underline;
   font-weight: 900;
   border: 1px solid #012169;
@@ -101,16 +104,14 @@ body {
 /* Main Frame */
 #main-frame {
   width: 100vw;
-  --heightA: calc(var(--vh,1vh)*100);
-  --heightB: calc(var(--heightA) - 222px);
-  height: var(--heightB);
+  height: auto;
 }
 
 /* End Main Frame */
 
 /* Begin Footer */
 
-.panel-footer .container{
+.panel-footer .container {
   height: 20px;
 }
 
@@ -126,15 +127,49 @@ body {
 /* End Footer */
 /* End Home Page */
 
-/* Pages inside iframe */
-.inside-page {
+/* New Request Page */
+.content-page {
   background-color: #fff;
 }
 
+.form-label {
+  background-color: #c9d6f7;
+  padding: 5px 5px 5px 5px;
+  margin: 0;
+  font-size: medium;
+  border: #fff solid 3px;
+}
+
+/*.form-label > span {
+  box-sizing: ; try putting text vertically middle
+  padding-top: 10px;
+  margin: 10px;
+} */
+
+.full-row {
+  width: 100%;
+  height: auto;
+}
+
+.form-label input:not([type="checkbox"]) {
+  box-sizing: inherit;
+  width: 50%;
+  float: right;
+  font-weight: normal;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+}
 
 @media (min-width: 1200px) {
   #logo-img {
-    background: url('../images/CollabPoint-logo-Large.png') no-repeat;
+    background: url("../images/CollabPoint-logo-Large.png") no-repeat;
     width: 150px;
     height: 100px;
     margin: 10px 15px 10px 15px;
@@ -145,7 +180,7 @@ body {
 @media (min-width: 970px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../images/CollabPoint-logo-medium.png') no-repeat;
+    background: url("../images/CollabPoint-logo-medium.png") no-repeat;
     width: 80px;
     height: 80px;
     margin: 5px 10px 5px 10px;
@@ -155,22 +190,12 @@ body {
     margin-top: 15px;
   }
   /* End Header */
-
-  /* Main Frame */
-  #main-frame {
-    width: 100vw;
-    --heightA: calc(var(--vh,1vh)*100);
-    --heightB: calc(var(--heightA) - 207px);
-    height: var(--heightB);
-  }
-
-
 }
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 969px){
+@media (min-width: 768px) and (max-width: 969px) {
   /* Begin Header */
   #logo-img {
-    background: url('../images/CollabPoint-logo-small.png') no-repeat;
+    background: url("../images/CollabPoint-logo-small.png") no-repeat;
     width: 50px;
     height: 50px;
     margin: 2px 5px 2px 5px;
@@ -178,15 +203,17 @@ body {
   .navbar-brand {
     padding-top: 15px;
   }
-  .navbar-brand h1 { /* platform name */
+  .navbar-brand h1 {
+    /* platform name */
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: .75;
+    line-height: 0.75;
   }
-  .navbar-brand p { /* tag line */
-    font-size: .6em;
+  .navbar-brand p {
+    /* tag line */
+    font-size: 0.6em;
     margin-top: 5px;
   }
 
@@ -196,24 +223,17 @@ body {
   /* End Header */
 
   /* Main Frame */
-  #main-frame {
-    width: 100vw;
-    --heightA: calc(var(--vh,1vh)*100);
-    --heightB: calc(var(--heightA) - 171px);
-    height: var(--heightB);
-  }
-
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Begin Header */
-  .container>.navbar-header {
+  .container > .navbar-header {
     margin: 0px;
   }
-  
+
   #logo-img {
-    background: url('../images/CollabPoint-logo-small.png') no-repeat;
+    background: url("../images/CollabPoint-logo-small.png") no-repeat;
     width: 50px;
     height: 50px;
     margin: 2px 2px 2px 5px;
@@ -222,7 +242,7 @@ body {
   .navbar-brand {
     padding-top: 10px;
     padding-left: 10px;
-    height: 90px;    
+    height: 90px;
   }
   .navbar-brand h1 {
     font-size: 5.5vw;
@@ -249,18 +269,11 @@ body {
   }
 
   #nav-list li {
-    width: 90%!important;
+    width: 90% !important;
     margin: auto;
   }
 
   /* End Header */
-  
-  /* Main Frame */
-  #main-frame {
-    width: 100vw;
-    --heightA: calc(var(--vh,1vh)*100);
-    --heightB: calc(var(--heightA) - 152px);
-    height: var(--heightB);
-  }
 
+  /* Main Frame */
 }
