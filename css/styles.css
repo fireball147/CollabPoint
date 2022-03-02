@@ -32,7 +32,6 @@ body {
   color: #012169;
   font-size: 1.5em;
   font-weight: bold;
-  /* text-shadow: 1px 1px 1px #222; */
   margin-top: 0;
   margin-bottom: 0;
   line-height: 0.75;
@@ -130,6 +129,11 @@ body {
 /* New Request Page */
 .content-page {
   background-color: #fff;
+}
+
+.content-page > p {
+  font-weight: 900;
+  padding: 10px 0 0px 3px;
 }
 
 .form-label {
