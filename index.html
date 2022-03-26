@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CollabPoint</title>
-    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -13,75 +15,61 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lora"
-      rel="stylesheet"
-      type="text/css"
-    />
   </head>
   <body>
-    <header>
-      <nav id="header-nav" class="navbar navbar-default">
-        <div id="header-div" class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="pull-left">
-              <div id="logo-img"></div>
-            </a>
-            <div class="navbar-brand">
-              <a href="index.html"><h1>Welcome to CollabPoint</h1></a>
-              <p>Collaborative Efforts Towards Success</p>
-            </div>
-            <button
-              type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#collapsable-nav"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="collapsable-nav" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav">
-              <li>
-                <button id="new_req" onclick="setFrame(event)">
-                  New Request
-                </button>
-              </li>
-              <li>
-                <a id="my_req" href ="index.html" onclick="setFrame(event)">
-                  My Requests
-                </a>
-              </li>
-              <li>
-                <a href=>Recent Requests</a>
-              </li>
-              <li>
-                <a href="index.html">Team Desk</a>
-              </li>
-              <li>
-                <a href="index.html">Admin Task</a>
-              </li>
-              <li>
-                <a href="index.html">Preferences</a>
-              </li>
-            </ul>
-          </div>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="/">
+          <img
+            src="../resources/Brand_Resources/Logo-wth-text.svg"
+            alt="Logo-with-text"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-content"
+          aria-controls="navbar-content"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"> Platform </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"> Pricing </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Story</a></li>
+                <li><a class="dropdown-item" href="#">Leadership</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
-    <iframe id="main-frame" src=""> </iframe>
-    <footer class="panel-footer">
-      <div class="container">
-        <span id="helpdesk"><a href="helpdesk_page.html">Helpdesk</a></span>
-      </div>
-    </footer>
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
