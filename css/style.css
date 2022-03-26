@@ -1,0 +1,52 @@
+.navbar {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+svg {
+  width: 200px;
+  height: auto;
+  margin-right: 25px;
+}
+
+.navbar .navbar-collapse .navbar-nav li a {
+  padding: 0 40px;
+  color: #0091d4;
+}
+
+.btn.btn-block {
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.btn.btn-block:not(.btn-danger) {
+  border: 1px solid #0091d4;
+  background-color: #fff;
+  color: #0091d4;
+}
+
+.btn.btn-block:hover,
+.btn.btn-block:active,
+.btn.btn-block:focus {
+  box-shadow: none;
+  background-color: #0091d4;
+  color: #fff;
+}
+
+.btn.btn-block.auth-btn.btn-danger {
+  border: 1px solid #d32d40;
+  background-color: #fff;
+  color: #d32d40;
+}
+
+.btn.btn-block.auth-btn.btn-danger:hover,
+.btn.btn-block.auth-btn.btn-danger:active,
+.btn.btn-block.auth-btn.btn-danger:focus {
+  box-shadow: none;
+  background-color: #d32d40;
+  color: #fff;
+}
