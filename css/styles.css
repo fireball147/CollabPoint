@@ -1,52 +1,60 @@
-.navbar {
+nav.sidebar {
   font-size: 16px;
   font-weight: 700;
-  background-color: #fff;
+  background-color: #0091d4;
+  width: 3vw;
+  height: 100vh;
 }
 
-svg {
-  width: 200px;
+nav.sidebar:hover,
+nav.sidebar:focus,
+nav.sidebar:active {
+  width: 15vw;
+}
+
+#sidebarLogo {
+  width: 2vw;
   height: auto;
-  margin-right: 25px;
+  margin: 20px 10px 10px 10px;
 }
 
-.navbar .navbar-collapse .navbar-nav li a {
-  padding: 0 40px;
-  color: #0091d4;
+.accordion {
+  margin-top: 100px;
 }
 
-.btn.btn-block {
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  font-weight: 700;
-  border-radius: 20px;
+.accordion-item {
+  border: 0;
 }
 
-.btn.btn-block:not(.btn-danger) {
-  border: 1px solid #0091d4;
-  background-color: #fff;
-  color: #0091d4;
-}
-
-.btn.btn-block:hover,
-.btn.btn-block:active,
-.btn.btn-block:focus {
-  box-shadow: none;
+.accordion-button,
+.accordion-button:not(.collapsed) {
   background-color: #0091d4;
   color: #fff;
-}
-
-.btn.btn-block.auth-btn.btn-danger {
-  border: 1px solid #d32d40;
-  background-color: #fff;
-  color: #d32d40;
-}
-
-.btn.btn-block.auth-btn.btn-danger:hover,
-.btn.btn-block.auth-btn.btn-danger:active,
-.btn.btn-block.auth-btn.btn-danger:focus {
+  font-weight: 700;
   box-shadow: none;
-  background-color: #d32d40;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #0091d4;
+  border: 0;
+}
+
+.accordion-body a {
+  display: block;
+  height: 56px;
+  padding-top: 16px;
   color: #fff;
+  text-decoration: none;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
 }
